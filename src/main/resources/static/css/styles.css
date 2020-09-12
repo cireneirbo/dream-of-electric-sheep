@@ -1,0 +1,21 @@
+.navbar-container {
+    border-bottom: 1px solid black;
+}
+
+.navbar-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar-link {
+    display: inline-block;
+}
+
+.navbar-link a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
