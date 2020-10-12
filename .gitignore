@@ -232,4 +232,6 @@ _Pvt_Extensions
 .fake/
 
 .vscode
+
 .env
+ClientApp/.env
