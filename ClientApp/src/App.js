@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router';
 import { Layout } from './components/Layout';
-// import { Home } from './components/Home';
+import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { useAuth0 } from "@auth0/auth0-react";
-// import { ProtectedRoute } from './auth/protected-route';
+import { ProtectedRoute } from './auth/protected-route';
 import './custom.css'
-
-import { NavBar, Loading } from "./components";
-import { Home, Profile } from "./views";
+import { NavMenu } from "./components/NavMenu";
+import { Loading } from "./components/loading";
+import { Profile } from "./views/profile";
 
 const App = () => {
   const { isLoading } = useAuth0();
@@ -20,11 +20,12 @@ const App = () => {
 
   return (
     <div id="app" className="d-flex flex-column h-100">
-      <NavBar />
+      <NavMenu />
       <div className="container flex-grow-1">
         <Switch>
           <Route path="/" exact component={Home} />
-          {/* <ProtectedRoute path="/profile" component={Profile} /> */}
+          <ProtectedRoute path="/counter" component={Counter} />
+          <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
     </div>
