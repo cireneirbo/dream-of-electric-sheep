@@ -1,2 +1,3 @@
 REACT_APP_AUTH0_DOMAIN= "your Auth0 Domain"
 REACT_APP_AUTH0_CLIENT_ID= "your Auth0 Client Id"
+COIN_MARKET_CAP_API_KEY= "your coinmarketcap.com API key"
