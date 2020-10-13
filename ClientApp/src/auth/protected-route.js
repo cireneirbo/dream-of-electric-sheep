@@ -11,5 +11,3 @@ export const ProtectedRoute = ({ component, ...args }) => (
     {...args}
   />
 );
-
-// export default ProtectedRoute;

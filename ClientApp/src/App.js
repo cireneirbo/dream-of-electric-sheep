@@ -10,6 +10,7 @@ import './custom.css'
 import { NavMenu } from "./components/NavMenu";
 import { Loading } from "./components/loading";
 import { Profile } from "./views/profile";
+import { FetchCrypto } from './components/FetchCrypto';
 
 const App = () => {
   const { isLoading } = useAuth0();
@@ -25,6 +26,8 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <ProtectedRoute path="/counter" component={Counter} />
+          <ProtectedRoute path="/fetchCryptoAPI" component={FetchCrypto} />
+          <ProtectedRoute path="/fetchWeatherAPI" component={FetchData} />
           <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
