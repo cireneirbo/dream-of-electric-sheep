@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace dream_of_electric_sheep.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("cryptoprices")]
     public class CryptoPricesController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
