@@ -54,6 +54,6 @@ export class FetchCrypto extends Component {
   async populateCryptoPrice() {
     const response = await fetch('cryptoprices');
     const data = await response.json();
-    this.setState({ forecasts: data, loading: false });
+    this.setState({ prices: data, loading: false });
   }
 }
