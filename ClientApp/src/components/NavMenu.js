@@ -43,6 +43,9 @@ export class NavMenu extends Component {
                   <NavLink tag={Link} className="text-dark" to="/fetchWeatherAPI">Fetch Weather API</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink tag={Link} className="text-dark" to="/fetchCoinMarketCapAPI">Fetch CoinMarketCap API</NavLink>
+                </NavItem>
+                <NavItem>
                   <NavLink tag={Link} className="text-dark" to="/profile">My Profile</NavLink>
                 </NavItem>
                 <NavItem>

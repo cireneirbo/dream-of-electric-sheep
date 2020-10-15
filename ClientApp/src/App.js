@@ -12,6 +12,7 @@ import { Profile } from "./views/profile";
 import { FetchCrypto } from './components/FetchCrypto';
 // import './custom.css';
 import './styles/assets/css/main.css';
+import { FetchCoinMarketCapData } from './components/FetchCoinMarketCapData';
 
 const App = () => {
   const { isLoading } = useAuth0();
@@ -29,6 +30,7 @@ const App = () => {
           <ProtectedRoute path="/counter" component={Counter} />
           <ProtectedRoute path="/fetchCryptoAPI" component={FetchCrypto} />
           <ProtectedRoute path="/fetchWeatherAPI" component={FetchData} />
+          <ProtectedRoute path="/fetchCoinMarketCapAPI" component={FetchCoinMarketCapData} />
           <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
