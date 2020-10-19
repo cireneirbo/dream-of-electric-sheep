@@ -53,7 +53,7 @@ export class FetchCoinMarketCapData extends Component {
   }
 
   async populateCryptoPrice() {
-    const response = await fetch('coinmarketcapdatacontroller');
+    const response = await fetch('coinmarketcapdata');
     const data = await response.json();
     this.setState({ prices: data, loading: false });
 

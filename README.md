@@ -38,6 +38,11 @@ use content from <em>/dream-of-electric-sheep/ClientApp/example-env.js</em> as a
 
 from <em>/dream-of-electric-sheep</em> in the terminal, enter:
 `
+dotnet add package Twilio
+`
+this installs Twilio, see https://www.twilio.com/docs/libraries/csharp-dotnet/details for more
+
+`
 dotnet run
 `
 this launches a localhost server at http://localhost:5001/
