@@ -25,14 +25,14 @@ export class FetchCoinMarketCapData extends Component {
           </tr>
         </thead>
         <tbody>
-          {prices.map(price =>
-            <tr key={price.date}>
+          {/* {prices.map(price =>
+            // <tr key={price.date}>
               {/* <td>{price.date}</td>
               <td>{price.temperatureC}</td>
               <td>{price.temperatureF}</td>
               <td>{price.summary}</td> */}
-            </tr>
-          )}
+            {/* // </tr> */}
+          {/* )} */}
         </tbody>
       </table>
     );
