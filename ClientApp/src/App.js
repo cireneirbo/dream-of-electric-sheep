@@ -6,11 +6,13 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { useAuth0 } from "@auth0/auth0-react";
 import { ProtectedRoute } from './auth/protected-route';
-import './custom.css'
 import { NavMenu } from "./components/NavMenu";
 import { Loading } from "./components/loading";
 import { Profile } from "./views/profile";
 import { FetchCrypto } from './components/FetchCrypto';
+// import './custom.css';
+import './styles/assets/css/main.css';
+import { FetchCoinMarketCapData } from './components/FetchCoinMarketCapData';
 
 const App = () => {
   const { isLoading } = useAuth0();
@@ -20,14 +22,15 @@ const App = () => {
   }
 
   return (
-    <div id="app" className="d-flex flex-column h-100">
+    <div id="logo" className="d-flex flex-column h-100">
       <NavMenu />
-      <div className="container flex-grow-1">
+      <div id="nav" className="container flex-grow-1">
         <Switch>
           <Route path="/" exact component={Home} />
           <ProtectedRoute path="/counter" component={Counter} />
           <ProtectedRoute path="/fetchCryptoAPI" component={FetchCrypto} />
           <ProtectedRoute path="/fetchWeatherAPI" component={FetchData} />
+          <ProtectedRoute path="/fetchCoinMarketCapAPI" component={FetchCoinMarketCapData} />
           <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
@@ -36,24 +39,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-
-
-/*
-export default class App extends Component {
-  static displayName = App.name;
-
-  render () {
-    return (
-      <Layout>
-        <Route exact path='/' component={Home} />
-        <Route path='/counter' component={Counter} />
-        <Route path='/fetch-data' component={FetchData} />
-        
-      </Layout>
-    );
-  }
-}*/

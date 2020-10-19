@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-export class FetchCrypto extends Component {
-  static displayName = FetchCrypto.name;
+export class FetchCoinMarketCapData extends Component {
+  static displayName = FetchCoinMarketCapData.name;
 
   constructor(props) {
     super(props);
@@ -13,6 +13,7 @@ export class FetchCrypto extends Component {
   }
 
   static renderPricesTable(prices) {
+      console.log(prices)
     return (
       <table className='table table-striped' aria-labelledby="tabelLabel">
         <thead>
@@ -24,14 +25,14 @@ export class FetchCrypto extends Component {
           </tr>
         </thead>
         <tbody>
-          {prices.map(price =>
-            <tr key={price.date}>
-              <td>{price.date}</td>
+          {/* {prices.map(price =>
+            // <tr key={price.date}>
+              {/* <td>{price.date}</td>
               <td>{price.temperatureC}</td>
               <td>{price.temperatureF}</td>
-              <td>{price.summary}</td>
-            </tr>
-          )}
+              <td>{price.summary}</td> */}
+            {/* // </tr> */}
+          {/* )} */}
         </tbody>
       </table>
     );
@@ -40,7 +41,7 @@ export class FetchCrypto extends Component {
   render() {
     let contents = this.state.loading
       ? <p><em>Loading...</em></p>
-      : FetchCrypto.renderPricesTable(this.state.prices);
+      : FetchCoinMarketCapData.renderPricesTable(this.state.prices);
 
     return (
       <div>
@@ -52,8 +53,9 @@ export class FetchCrypto extends Component {
   }
 
   async populateCryptoPrice() {
-    const response = await fetch('cryptoprices');
+    const response = await fetch('coinmarketcapdata');
     const data = await response.json();
     this.setState({ prices: data, loading: false });
+
   }
 }
