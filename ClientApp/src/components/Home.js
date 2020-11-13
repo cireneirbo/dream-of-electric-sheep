@@ -61,14 +61,14 @@ export class Home extends Component {
 							<p>And there are no hoverboards or flying cars.<br />
 							Just apps. Lots of mother flipping apps.</p>
 						</header>
-						<span class="image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span>
+						{/* <span class="image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span> */}
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
 
 			{/* <!-- One --> */}
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span>
+					{/* <span class="image fit main"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span> */}
 					<div class="content">
 						<div class="container">
 							<div class="row">
@@ -100,7 +100,7 @@ export class Home extends Component {
 
 			{/* <!-- Two --> */}
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span>
+					{/* <span class="image fit main"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span> */}
 					<div class="content">
 						<header>
 							<h2>Interdum amet non magna accumsan</h2>

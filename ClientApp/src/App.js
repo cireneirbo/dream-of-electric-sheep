@@ -10,7 +10,7 @@ import { NavMenu } from "./components/NavMenu";
 import { Loading } from "./components/loading";
 import { Profile } from "./views/profile";
 import { FetchCrypto } from './components/FetchCrypto';
-// import './custom.css';
+import './custom.css';
 import './styles/assets/css/main.css';
 import { FetchCoinMarketCapData } from './components/FetchCoinMarketCapData';
 
