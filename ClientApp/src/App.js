@@ -11,7 +11,7 @@ import { Loading } from "./components/loading";
 import { Profile } from "./views/profile";
 import { FetchCrypto } from './components/FetchCrypto';
 import './custom.css';
-// import './styles/assets/css/main.css';
+import './styles/assets/css/main.css';
 import { FetchCoinMarketCapData } from './components/FetchCoinMarketCapData';
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
       <div id="nav" className="container flex-grow-1">
         <Switch>
           <Route path="/" exact component={Home} />
-          <ProtectedRoute path="/counter" component={Counter} />
+          <Route path="/counter" component={Counter} />
           <ProtectedRoute path="/fetchCryptoAPI" component={FetchCrypto} />
           <ProtectedRoute path="/fetchWeatherAPI" component={FetchData} />
           <ProtectedRoute path="/fetchCoinMarketCapAPI" component={FetchCoinMarketCapData} />
