@@ -6,62 +6,13 @@ export class Home extends Component {
 
   render () {
     return (
-      // <div>
-      //   <h1>Hello, world!</h1>
-      //   <p>Welcome to your new single-page application, built with:</p>
-      //   <ul>
-      //     <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-      //     <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-      //     <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
-      //   </ul>
-      //   <p>To help you get started, we have also set up:</p>
-      //   <ul>
-      //     <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-      //     <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-      //     <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
-      //   </ul>
-      //   <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
-      // </div>
       <div id="page-wrapper">
-
-			{/* <!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
-						</ul>
-					</nav>
-				</header> */}
-
 			{/* <!-- Banner --> */}
 				<section id="banner">
 					<div class="content">
-						<header>
-							<h2>The future has landed</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
-						</header>
-						{/* <span class="image"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span> */}
+						<h2>The future has landed</h2>
+						<p>And there are no hoverboards or flying cars.<br />
+						Just apps. Lots of mother flipping apps.</p>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
@@ -100,12 +51,11 @@ export class Home extends Component {
 
 			{/* <!-- Two --> */}
 				<section id="two" class="spotlight style2 right">
-					{/* <span class="image fit main"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F2000%2F1*Efg8AMyWXCvj9mq_hchcBQ.jpeg&f=1&nofb=1" alt="" /></span> */}
 					<div class="content">
-						<header>
+						<fieldset>
 							<h2>Interdum amet non magna accumsan</h2>
 							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
-						</header>
+						</fieldset>
 						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
 						<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
