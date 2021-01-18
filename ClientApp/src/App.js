@@ -28,9 +28,9 @@ const App = () => {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/counter" component={Counter} />
-          <ProtectedRoute path="/fetchCryptoAPI" component={FetchCrypto} />
-          <ProtectedRoute path="/fetchWeatherAPI" component={FetchData} />
-          <ProtectedRoute path="/fetchCoinMarketCapAPI" component={FetchCoinMarketCapData} />
+          <Route path="/fetchCryptoAPI" component={FetchCrypto} />
+          <Route path="/fetchWeatherAPI" component={FetchData} />
+          <Route path="/fetchCoinMarketCapAPI" component={FetchCoinMarketCapData} />
           <ProtectedRoute path="/profile" component={Profile} />
         </Switch>
       </div>
