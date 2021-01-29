@@ -56,4 +56,6 @@ export class FetchCrypto extends Component {
     const data = await response.json();
     this.setState({ prices: data, loading: false });
   }
+
+  
 }

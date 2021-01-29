@@ -23,7 +23,7 @@ namespace dream_of_electric_sheep.Controllers
         {
             _logger = logger;
         }
-/*
+
         [HttpGet]
         public IEnumerable<CryptoPrices> Get()
         {
@@ -35,21 +35,9 @@ namespace dream_of_electric_sheep.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
-        }*/
-
-        private static string API_KEY = "COIN_MARKET_CAP_API_KEY";
-
-        public static void Main(string[] args)
-        {
-            try
-            {
-            Console.WriteLine(makeAPICall());
-            }
-            catch (WebException e)
-            {
-            Console.WriteLine(e.Message);
-            }
         }
+
+        private static string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
 
         static string makeAPICall()
             {
