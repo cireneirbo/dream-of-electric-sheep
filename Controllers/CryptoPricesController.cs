@@ -24,7 +24,7 @@ namespace dream_of_electric_sheep.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        /*[HttpGet]
         public IEnumerable<CryptoPrices> Get()
         {
             var rng = new Random();
@@ -35,7 +35,7 @@ namespace dream_of_electric_sheep.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
-        }
+        }*/
 
         private static string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
 
