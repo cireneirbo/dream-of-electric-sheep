@@ -19,7 +19,7 @@ namespace dream_of_electric_sheep
 
         public string Summary { get; set; }
 
-        private static string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
+        public static string API_KEY => Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
 
         static string makeAPICall()
             {
