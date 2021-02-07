@@ -13,6 +13,7 @@ export class FetchCrypto extends Component {
   }
 
   static renderPricesTable(prices) {
+    
     return (
       <table className='table table-striped' aria-labelledby="tabelLabel">
         <thead>

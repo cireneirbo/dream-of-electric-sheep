@@ -17,6 +17,11 @@ namespace dream_of_electric_sheep.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" //update
         };*/
+
+        private static readonly string[] Summaries = new[]
+        {
+            Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY")
+        };
         private readonly ILogger<CryptoPricesController> _logger;
 
         public CryptoPricesController(ILogger<CryptoPricesController> logger)
@@ -24,7 +29,7 @@ namespace dream_of_electric_sheep.Controllers
             _logger = logger;
         }
 
-        /*[HttpGet]
+        [HttpGet]
         public IEnumerable<CryptoPrices> Get()
         {
             var rng = new Random();
@@ -32,12 +37,13 @@ namespace dream_of_electric_sheep.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Summary = API_KEY
+                // Apikey = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY")
             })
             .ToArray();
-        }*/
+        }
 
-        private static string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
+        private static readonly string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
 
         static string makeAPICall()
             {
