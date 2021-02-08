@@ -47,7 +47,7 @@ namespace dream_of_electric_sheep.Controllers
 
                 var queryString = HttpUtility.ParseQueryString(string.Empty);
                 queryString["start"] = "1";
-                queryString["limit"] = "5000";
+                queryString["limit"] = "20";
                 queryString["convert"] = "USD";
 
                 URL.Query = queryString.ToString();
