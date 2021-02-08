@@ -32,7 +32,7 @@ namespace dream_of_electric_sheep.Controllers
         [HttpGet]
         public IEnumerable<CryptoPrices> Get()
         {
-            var rng = new Random();
+            /*var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new CryptoPrices
             {
                 Date = DateTime.Now.AddDays(index),
@@ -40,7 +40,28 @@ namespace dream_of_electric_sheep.Controllers
                 Summary = API_KEY
                 // Apikey = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY")
             })
-            .ToArray();
+            .ToArray();*/
+            var URL = new UriBuilder("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest");
+
+                var rng = new Random();
+
+                var queryString = HttpUtility.ParseQueryString(string.Empty);
+                queryString["start"] = "1";
+                queryString["limit"] = "5000";
+                queryString["convert"] = "USD";
+
+                URL.Query = queryString.ToString();
+
+                var client = new WebClient();
+                client.Headers.Add("X-CMC_PRO_API_KEY", Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"));
+                client.Headers.Add("Accepts", "application/json");
+                //return Enumerable(client.DownloadString(URL.ToString()).ToArray();
+                return Enumerable.Range(1, 5).Select(index => new CryptoPrices
+                {
+                    Date = DateTime.Now.AddDays(index),
+                    TemperatureC = rng.Next(-20, 55),
+                    Summary = client.DownloadString(URL.ToString())
+                }).ToArray();
         }
 
         private static readonly string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
