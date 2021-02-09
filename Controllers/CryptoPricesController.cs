@@ -44,6 +44,7 @@ namespace dream_of_electric_sheep.Controllers
             var URL = new UriBuilder("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest");
 
                 var rng = new Random();
+                //private string API_KEY = Configuration["COIN_MARKET_CAP_API_KEY"];
 
                 var queryString = HttpUtility.ParseQueryString(string.Empty);
                 queryString["start"] = "1";
