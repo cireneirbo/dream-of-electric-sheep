@@ -54,7 +54,7 @@ namespace dream_of_electric_sheep.Controllers
                 URL.Query = queryString.ToString();
 
                 var client = new WebClient();
-                client.Headers.Add("X-CMC_PRO_API_KEY", Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"));
+                client.Headers.Add("X-CMC_PRO_API_KEY", API_KEY);//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"));
                 client.Headers.Add("Accepts", "application/json");
                 //return Enumerable(client.DownloadString(URL.ToString()).ToArray();
                 return Enumerable.Range(1, 5).Select(index => new CryptoPrices
