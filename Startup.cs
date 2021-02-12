@@ -10,7 +10,7 @@ namespace dream_of_electric_sheep
 {
     public class Startup
     {
-        //private string _CoinMarketCapApiKey = null;
+        private string _CoinMarketCapApiKey = null;
 
         public Startup(IConfiguration configuration)
         {
@@ -22,8 +22,7 @@ namespace dream_of_electric_sheep
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            //_CoinMarketCapApiKey = Configuration["COIN_MARKET_CAP_API_KEY"];
+            _CoinMarketCapApiKey = Configuration["COIN_MARKET_CAP_API_KEY"];
 
             services.AddControllersWithViews();
 
@@ -37,6 +36,12 @@ namespace dream_of_electric_sheep
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            /*app.Run(async (context) =>
+            {
+                var result = string.IsNullOrEmpty(_CoinMarketCapApiKey) ? "Null" : "Not Null";
+                await context.Response.WriteAsync($"Secret is {result}");
+            });*/
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

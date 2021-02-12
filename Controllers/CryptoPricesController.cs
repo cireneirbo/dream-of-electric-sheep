@@ -18,10 +18,10 @@ namespace dream_of_electric_sheep.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" //update
         };*/
 
-        private static readonly string[] Summaries = new[]
+        /*private static readonly string[] Summaries = new[]
         {
             Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY")
-        };
+        };*/
         private readonly ILogger<CryptoPricesController> _logger;
 
         public CryptoPricesController(ILogger<CryptoPricesController> logger)
@@ -65,7 +65,7 @@ namespace dream_of_electric_sheep.Controllers
                 }).ToArray();
         }
 
-        private static readonly string API_KEY = Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
+        private static readonly string API_KEY = Configuration["COIN_MARKET_CAP_API_KEY"];//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
 
         static string makeAPICall()
             {
