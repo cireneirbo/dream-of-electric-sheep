@@ -1,5 +1,5 @@
 # Dream Of Electric Sheep
-A web service that notifies users of their specified cryptocurrencies when a significant change in value is detected.
+A web service that notifies users of their specified cryptocurrencies when a significant change in value is detected. Notifications can be either with email or text.
 
 <b>What the project does</b>
 
