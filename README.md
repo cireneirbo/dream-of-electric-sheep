@@ -3,7 +3,7 @@ A web service that notifies users of their specified cryptocurrencies when a sig
 
 <b>What the project does</b>
 
-<em>Dream Of Electric Sheep</em> utilizes the CoinMarketCap API ( https://coinmarketcap.com/api/documentation/v1/ ) to send the user mobile and email cryptocurrency price alerts when certain conditions have been met. The user must create an account with the web service to use the service, which enables them to customize their personal settings. 
+<em>Dream Of Electric Sheep</em> utilizes the CoinMarketCap API ( https://coinmarketcap.com/api/documentation/v1/ ) to send the user mobile and email cryptocurrency price alerts when certain conditions have been met. The user must create an account with the web service (Auth0) to use the service, which enables them to customize their personal settings. 
 `
 For example, a user could set their alert for Bitcoin to trigger if the price of Bitcoin changes more than 1% of total value within a 6 hour period.
 `
