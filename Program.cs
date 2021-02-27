@@ -12,7 +12,7 @@ namespace dream_of_electric_sheep
     public class Program
     {
         public static IConfigurationRoot Configuration;
-        const string SecretName= "COIN_MARKET_CAP_API_KEY";
+        public const string SecretName= "COIN_MARKET_CAP_API_KEY";
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
