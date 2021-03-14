@@ -65,7 +65,7 @@ namespace dream_of_electric_sheep.Controllers
                 }).ToArray();
         }
 
-        private static string API_KEY = Program.Configuration[Program.SecretName];//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY");
+        private static string API_KEY = Program.Configuration[Program.SecretName];//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"); this might be a dead end project
 
         static string makeAPICall()
             {
