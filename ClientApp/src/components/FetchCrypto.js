@@ -30,7 +30,7 @@ export class FetchCrypto extends Component {
               <td>{price.date}</td>
               <td>{price.temperatureC}</td>
               <td>{price.temperatureF}</td>
-              <td>{price.summary}</td>
+              <td>{price.summ}</td>
             </tr>
           )}
         </tbody>

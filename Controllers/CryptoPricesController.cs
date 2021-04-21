@@ -13,10 +13,10 @@ namespace dream_of_electric_sheep.Controllers
     [Route("cryptoprices")]
     public class CryptoPricesController : ControllerBase
     {
-        /*private static readonly string[] Summaries = new[]
+        private static readonly string API_KEY = process.env.API_KEY;;
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching" //update
-        };*/
+            
+        };
 
         /*private static readonly string[] Summaries = new[]
         {
@@ -65,7 +65,7 @@ namespace dream_of_electric_sheep.Controllers
                 }).ToArray();
         }
 
-        private static string API_KEY = Program.Configuration[Program.SecretName];//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"); this might be a dead end project
+        //private static string API_KEY = Program.Configuration[Program.SecretName];//Environment.GetEnvironmentVariable("COIN_MARKET_CAP_API_KEY"); this might be a dead end project
 
         static string makeAPICall()
             {

@@ -235,3 +235,5 @@ _Pvt_Extensions
 
 .env
 ClientApp/.env
+.env/test
+ClientApp/.env/test
