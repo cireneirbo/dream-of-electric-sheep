@@ -232,7 +232,7 @@ _Pvt_Extensions
 .fake/
 
 .vscode
-
+config.json
 .env
 ClientApp/.env
 .env/test

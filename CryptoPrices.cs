@@ -19,6 +19,6 @@ namespace dream_of_electric_sheep
 
         public string Summary { get; set; }
 
-        public string APIKEY = "secret_key";
+        //public string APIKEY = "secret_key";
     }
 }
